@@ -1,0 +1,3 @@
+# Exclude TypeScript files from language statistics
+*.ts linguist-documentation=true
+*.tsx linguist-documentation=true

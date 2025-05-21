@@ -1,0 +1,369 @@
+/* Seasonal Theme Styles */
+
+/* Default theme - unchanged */
+.theme-default {
+  /* Keep default styles */
+}
+
+/* Default theme button improvements */
+.theme-default .inline-flex[class*="border-white"] {
+  border: 2px solid white !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s ease;
+}
+
+.theme-default .inline-flex[class*="border-white"]:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Christmas Theme */
+.theme-christmas {
+  --background: 220 13% 18%;
+  --foreground: 210 40% 98%;
+  --card: 220 13% 23%;
+  --card-foreground: 210 40% 98%;
+  --popover: 220 13% 18%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 142 72% 29%;
+  --primary-foreground: 144 80% 98%;
+  --secondary: 355 65% 49%;
+  --secondary-foreground: 355 100% 97%;
+  --muted: 217 19% 27%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 215 25% 27%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 85% 97%;
+  --border: 217 19% 27%;
+  --input: 217 19% 27%;
+  --ring: 142 72% 29%;
+  
+  /* Christmas-specific graphics */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 18l7.5-7.5M20 18l-7.5-7.5M20 18v15' stroke='%23165B33' stroke-width='1' opacity='0.2'/%3E%3Ccircle cx='20' cy='10.5' r='1.5' fill='%23BB2528' opacity='0.4'/%3E%3C/svg%3E");
+}
+
+/* Add Christmas theme-specific elements */
+.theme-christmas .card {
+  border-color: rgba(187, 37, 40, 0.2); /* Light red border */
+  box-shadow: 0 4px 12px rgba(22, 91, 51, 0.15); /* Green shadow */
+}
+
+.theme-christmas .button-primary {
+  background: linear-gradient(145deg, hsl(142, 72%, 29%), hsl(142, 72%, 25%));
+  box-shadow: 0 2px 8px rgba(22, 91, 51, 0.3);
+}
+
+/* Christmas product and user area styling */
+.theme-christmas .product-christmas button[class*="primary"] {
+  background: linear-gradient(to right, hsl(142, 72%, 29%), hsl(142, 72%, 35%));
+  box-shadow: 0 2px 10px rgba(22, 91, 51, 0.3);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.theme-christmas .product-christmas button[class*="primary"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(22, 91, 51, 0.4);
+  background: linear-gradient(to right, hsl(142, 72%, 35%), hsl(142, 72%, 29%));
+}
+
+.theme-christmas .product-christmas button[class*="secondary"] {
+  background: linear-gradient(to right, hsl(355, 65%, 49%), hsl(355, 65%, 55%));
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.theme-christmas .product-christmas button[class*="secondary"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(187, 37, 40, 0.3);
+}
+
+/* Valentine's Day Theme */
+.theme-valentine {
+  --background: 351 100% 99%;
+  --foreground: 353 21% 20%;
+  --card: 353 15% 97%;
+  --card-foreground: 353 21% 20%;
+  --popover: 351 100% 99%;
+  --popover-foreground: 353 21% 20%;
+  --primary: 342 75% 51%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 353 100% 92%;
+  --secondary-foreground: 353 40% 25%;
+  --muted: 353 15% 94%;
+  --muted-foreground: 353 21% 40%;
+  --accent: 353 15% 94%;
+  --accent-foreground: 353 21% 20%;
+  --destructive: 0 90% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 353 15% 92%;
+  --input: 353 15% 92%;
+  --ring: 342 75% 51%;
+  
+  /* Valentine-specific graphics */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 30c0 0 14-7.5 14-15.5c0-4.1-3.4-7.5-7.5-7.5c-3 0-5.5 1.7-6.5 4.5c-1-2.8-3.5-4.5-6.5-4.5c-4.1 0-7.5 3.4-7.5 7.5c0 8 14 15.5 14 15.5z' fill='%23FFB6C1' opacity='0.3'/%3E%3C/svg%3E");
+}
+
+/* Add Valentine theme-specific elements */
+.theme-valentine .card {
+  border-color: rgba(219, 39, 119, 0.2); /* Light pink border */
+  box-shadow: 0 4px 12px rgba(219, 39, 119, 0.15); /* Pink shadow */
+}
+
+.theme-valentine .button-primary {
+  background: linear-gradient(145deg, hsl(342, 75%, 51%), hsl(342, 75%, 47%));
+  box-shadow: 0 2px 8px rgba(219, 39, 119, 0.3);
+}
+
+/* Valentine's button improvements */
+.theme-valentine .inline-flex[class*="border-white"] {
+  border: 2px solid white !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s ease;
+}
+
+.theme-valentine .inline-flex[class*="border-white"]:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Valentine's hover effects */
+.theme-valentine a:hover,
+.theme-valentine button:hover:not(.button-primary):not([variant="outline"]) {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: hsl(342, 75%, 51%);
+  transform: scale(1.05);
+}
+
+/* Valentine product and user area styling */
+.theme-valentine .product-valentine button[class*="primary"] {
+  background: linear-gradient(to right, hsl(342, 75%, 51%), hsl(342, 75%, 57%));
+  box-shadow: 0 2px 10px rgba(219, 39, 119, 0.3);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.theme-valentine .product-valentine button[class*="primary"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(219, 39, 119, 0.4);
+  background: linear-gradient(to right, hsl(342, 75%, 57%), hsl(342, 75%, 51%));
+}
+
+.theme-valentine .product-valentine h1,
+.theme-valentine .product-valentine h2,
+.theme-valentine .product-valentine h3 {
+  background: linear-gradient(to right, hsl(342, 75%, 51%), hsl(330, 75%, 60%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+/* All Saints Day Theme */
+.theme-allsaints {
+  --background: 33 25% 16%;
+  --foreground: 33 10% 97%;
+  --card: 33 22% 22%;
+  --card-foreground: 33 10% 97%;
+  --popover: 33 25% 16%;
+  --popover-foreground: 33 10% 97%;
+  --primary: 31 100% 45%;
+  --primary-foreground: 33 10% 97%;
+  --secondary: 42 100% 60%;
+  --secondary-foreground: 33 40% 12%;
+  --muted: 33 15% 28%;
+  --muted-foreground: 33 10% 70%;
+  --accent: 33 15% 28%;
+  --accent-foreground: 33 10% 97%;
+  --destructive: 10 78% 40%;
+  --destructive-foreground: 33 10% 97%;
+  --border: 33 15% 28%;
+  --input: 33 15% 28%;
+  --ring: 31 100% 45%;
+  
+  /* All Saints-specific graphics */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 10c5 0 7 2 7 7c0 3-3 5-3 10h-8c0-5-3-7-3-10c0-5 2-7 7-7zM16 29h8v2h-8v-2z' fill='%23E38C2D' opacity='0.2'/%3E%3C/svg%3E");
+}
+
+/* Add All Saints theme-specific elements */
+.theme-allsaints .card {
+  border-color: rgba(227, 140, 45, 0.2); /* Light orange border */
+  box-shadow: 0 4px 12px rgba(227, 140, 45, 0.15); /* Orange shadow */
+}
+
+.theme-allsaints .button-primary {
+  background: linear-gradient(145deg, hsl(31, 100%, 45%), hsl(31, 100%, 41%));
+  box-shadow: 0 2px 8px rgba(227, 140, 45, 0.3);
+}
+
+/* All Saints button improvements */
+.theme-allsaints .inline-flex[class*="border-white"] {
+  border: 2px solid white !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s ease;
+}
+
+.theme-allsaints .inline-flex[class*="border-white"]:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* All Saints product and user area styling */
+.theme-allsaints .product-allsaints button[class*="primary"] {
+  background: linear-gradient(to right, hsl(31, 100%, 45%), hsl(31, 100%, 50%));
+  box-shadow: 0 2px 10px rgba(227, 140, 45, 0.3);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.theme-allsaints .product-allsaints button[class*="primary"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(227, 140, 45, 0.4);
+  background: linear-gradient(to right, hsl(31, 100%, 50%), hsl(31, 100%, 45%));
+}
+
+.theme-allsaints .product-allsaints select,
+.theme-allsaints .product-allsaints input,
+.theme-allsaints .product-allsaints textarea {
+  border-color: rgba(227, 140, 45, 0.3);
+  background-color: rgba(227, 140, 45, 0.05);
+}
+
+/* Theme transition effects for all themes */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.card, 
+.button,
+.input,
+.dropdown-menu {
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOMEPAGE DRAMATIC SEASONAL BACKGROUNDS */
+
+/* Default background for homepage */
+.default-bg {
+  background-color: hsl(var(--background));
+}
+
+/* Christmas background for homepage */
+.christmas-bg {
+  background: linear-gradient(135deg, #0a2c11 0%, #1a4c2a 100%);
+  position: relative;
+}
+
+.christmas-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 10L35 25H25L30 10zM30 25L40 40H20L30 25z' fill='%23165B33' opacity='0.2'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='3' fill='%23BB2528' opacity='0.3'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: -1;
+}
+
+.christmas-bg::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Valentine's Day background for homepage */
+.valentine-bg {
+  background: linear-gradient(135deg, #fdf2f8 0%, #fceef8 100%);
+  position: relative;
+}
+
+.valentine-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 60c0 0 30-15 30-33c0-8-7-15-15-15c-6 0-11 4-15 10c-4-6-9-10-15-10c-8 0-15 7-15 15c0 18 30 33 30 33z' fill='%23DB2777' opacity='0.25'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='3' fill='%23DB2777' opacity='0.2'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* All Saints Day background for homepage */
+.allsaints-bg {
+  background: linear-gradient(135deg, #292216 0%, #3d2e1b 100%);
+  position: relative;
+}
+
+.allsaints-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 15c6 0 10 4 10 10c0 4-5 12-10 20c-5-8-10-16-10-20c0-6 4-10 10-10zM20 50h20v5h-20v-5z' fill='%23E38C2D' opacity='0.2'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='2' fill='%23FCD34D' opacity='0.2'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: -1;
+}
+
+.allsaints-bg::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 30%, rgba(227, 140, 45, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Seasonal hero banner styles */
+.hero-banner.theme-default {
+  background: linear-gradient(135deg, rgba(0, 72, 35, 0.8) 0%, rgba(220, 38, 38, 0.8) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.hero-banner.theme-christmas {
+  background: linear-gradient(135deg, rgba(22, 91, 51, 0.8) 0%, rgba(22, 91, 51, 0.6) 100%), 
+              url('/christmas-banner.jpg') center/cover no-repeat;
+  border: 1px solid rgba(187, 37, 40, 0.3);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.hero-banner.theme-valentine {
+  background: linear-gradient(135deg, rgba(131, 24, 67, 0.85) 0%, rgba(219, 39, 119, 0.85) 100%), 
+              url('/valentine-banner.jpg') center/cover no-repeat;
+  border: 1px solid rgba(219, 39, 119, 0.2);
+  box-shadow: 0 10px 25px -5px rgba(219, 39, 119, 0.1), 0 10px 10px -5px rgba(219, 39, 119, 0.05);
+}
+
+.hero-banner.theme-allsaints {
+  background: linear-gradient(135deg, rgba(227, 140, 45, 0.4) 0%, rgba(227, 140, 45, 0.2) 100%), 
+              url('/allsaints-banner.jpg') center/cover no-repeat;
+  border: 1px solid rgba(227, 140, 45, 0.3);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+} 

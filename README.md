@@ -26,31 +26,6 @@ This project consists of two main parts:
   - SQLAlchemy - ORM for database interactions
   - JWT - For authentication and authorization
 
-## How The System Works
-
-1. **User Flow**:
-   - Users browse products by category or search for specific items
-   - Product details can be viewed with images, descriptions, and reviews
-   - Items can be added to cart or wishlist
-   - Checkout process involves address entry, payment method selection
-   - Orders can be tracked through the user profile
-
-2. **Data Flow**:
-   - Frontend components make API calls to the backend
-   - Backend processes requests, performs database operations
-   - Responses are returned as JSON data
-   - Frontend renders and updates based on received data
-
-3. **State Management**:
-   - Authentication state is managed through AuthProvider
-   - Shopping cart state is managed through CartProvider
-   - UI theme state is managed through ThemeProvider
-
-4. **Rendering**:
-   - Pages utilize hybrid rendering with both server-side and client-side components
-   - Critical UI is server-rendered for SEO and initial load performance
-   - Interactive elements use client-side JavaScript
-
 ## Use Cases and Applications
 
 - **Primary Uses**:
@@ -92,20 +67,6 @@ Payment processing is implemented using a secure multi-step approach:
    - Admin approval required for processing
    - Funds returned to original payment method
 
-## Known Issues and Limitations
-
-- **Current Limitations**:
-  - Limited payment gateway integrations
-  - No multi-language support
-  - Product inventory management is basic
-  - No support for recurring subscriptions
-
-- **Potential Problems**:
-  - High traffic spikes during sales may affect performance
-  - Mobile image optimization needs improvement
-  - Search functionality has limited filtering options
-  - Order fulfillment system requires manual intervention
-
 ## Features
 
 - User authentication (login, register, profile management)
@@ -128,15 +89,13 @@ For testing, you can use these accounts:
 ### Prerequisites
 
 - Node.js 18+
-- npm or pnpm
+- npm install
 
 ### Installation
 
 ```bash
 # Install dependencies
 npm install
-# or
-pnpm install
 ```
 
 ### Running the Frontend
@@ -144,8 +103,6 @@ pnpm install
 ```bash
 # Start the development server
 npm run dev
-# or
-pnpm dev
 ```
 
 The application will be available at http://localhost:3000
@@ -168,8 +125,6 @@ python -m venv venv
 # Activate the virtual environment
 # On Windows:
 venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt

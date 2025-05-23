@@ -47,22 +47,15 @@ Payment processing is implemented using a secure multi-step approach:
 1. **Payment Methods**:
    - Credit/debit cards (processed through a payment gateway)
    - Cash on delivery option
-   - Store credit/gift cards
 
-2. **Security Measures**:
-   - PCI compliance for card processing
-   - Data encryption for sensitive information
-   - Tokenization of payment details
-   - Secure checkout pages with SSL
-
-3. **Payment Flow**:
+2. **Payment Flow**:
    - User enters payment details at checkout
    - System validates information with basic checks
    - Payment gateway handles transaction processing
    - Order confirmation is generated after successful payment
    - Receipt is emailed to the customer
 
-4. **Refund Process**:
+3. **Refund Process**:
    - Refund requests can be initiated through the user account
    - Admin approval required for processing
    - Funds returned to original payment method
@@ -81,63 +74,4 @@ Payment processing is implemented using a secure multi-step approach:
 
 For testing, you can use these accounts:
 
-- **Admin User**: admin@rubyshop.com / admin123
 - **Test User**: test@example.com / test123
-
-## Frontend Setup
-
-### Prerequisites
-
-- Node.js 18+
-- npm install
-
-### Installation
-
-```bash
-# Install dependencies
-npm install
-```
-
-### Running the Frontend
-
-```bash
-# Start the development server
-npm run dev
-```
-
-The application will be available at http://localhost:3000
-
-## Backend Setup
-
-### Prerequisites
-
-- Python 3.8+
-
-### Installation
-
-```bash
-# Navigate to backend directory
-cd backend
-
-# Create a virtual environment (recommended)
-python -m venv venv
-
-# Activate the virtual environment
-# On Windows:
-venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Seed the database
-python database/seed.py
-```
-
-### Running the Backend
-
-```bash
-# Start the Flask server
-python run.py
-```
-
-The API will be available at http://localhost:5000
